@@ -1,2 +1,8 @@
-def add(x,y):
-    return x+y
+def add(*numbers):
+    sum = 0 
+    for i in numbers : 
+        sum += i 
+    return sum 
+
+total = add(1,2,3,4,5)
+print(f"total = {total}")
